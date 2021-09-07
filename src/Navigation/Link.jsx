@@ -1,10 +1,12 @@
 import React from 'react';
 import './Link.css';
+import { Link as ReactRoutreDomLink } from 'react-router-dom';
 
-function Link({ children, url }) {
+
+function Link({ children, to }) {
     return (
         <li className="listItem">
-            <a href={url}>{children}</a>
+            <ReactRoutreDomLink to={to}>{children}</ReactRoutreDomLink>
         </li>
     )
 }

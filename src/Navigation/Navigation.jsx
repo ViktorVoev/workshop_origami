@@ -7,10 +7,12 @@ function Navigation() {
     return (
         <nav className="Navigation">
             <ul>
-               <Link><img id='logo' src={logo} /></Link>
-               <Link>Go along 1</Link>
-               <Link>Go along 2</Link>
-               <Link>Go along 3</Link>
+               <Link to="/"><img id='logo' src={logo} /></Link>
+               <Link to="/">Posts</Link>
+               <Link to="/create-posts">New Post</Link>
+               <Link to="/profile">Profile</Link>
+               <Link to="/login">Login</Link>
+               <Link to="/register">Register</Link>
             </ul>
         </nav>
     )
